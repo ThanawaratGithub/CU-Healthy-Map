@@ -1,0 +1,27 @@
+.card{
+  width: 100%;
+}
+.card_container{
+    background-color: red;  
+    position:absolute;
+    left:20%;
+    top:30%;
+    width: 60%;
+    max-height: 50%;
+    overflow: auto;
+}
+.container {
+  margin-left:auto;
+  margin-right:auto;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.marker{
+  position: absolute;
+  width: 0.5vw;
+  
+}
+img{
+  min-width: 15px;
+}
