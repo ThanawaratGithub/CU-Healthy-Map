@@ -22,14 +22,12 @@
   height: 100vh;
   overflow: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
 }
 
 .map {
-  width: 900px;
-  height: 100%;
+  width: 853px;
+  height: 898px;
   object-fit: cover; /* Maintain the image's aspect ratio and fit within the container */
 }
 
