@@ -44,11 +44,12 @@ function App() {
 
         </>
       </Modal></>
-        <div className='container'>
-      
-        <img src={canteen}  className="map"/>
-       
-        </div>
+      <div className="container">
+  <div className="map-container">
+    <img src={canteen} className="map" alt="Map" />
+    <img  src = {mark} className="marker"></img>
+  </div>
+</div>
         </>
     );
 }

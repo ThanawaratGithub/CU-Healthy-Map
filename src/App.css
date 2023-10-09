@@ -12,27 +12,28 @@
     overflow: auto;
 }
 
-.marker{
-  position: absolute;
-  width: 0.5vw;
-  
-}
 .container {
+  background-color: red;
+  overflow: auto; /* Enable scrolling for overflowing content */
   width: 100vw;
   height: 100vh;
-  overflow: auto;
   display: flex;
 
 }
 
-.map {
-  width: 853px;
-  height: 898px;
-  object-fit: cover; /* Maintain the image's aspect ratio and fit within the container */
+.map-container {
+  position: relative;
 }
 
+.map{
+  width: 900px;
+  height: 900px;
 
-
-
-
-
+}
+.marker {
+  width: 27px;
+  height: 37px;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
