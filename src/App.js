@@ -79,7 +79,7 @@ function App() {
     <img  src = {mark} className="marker" id='horklang' style={{width:'27px',height:'37px',position:'absolute',top:'450px',left:'420px'}}></img>
         <img  src = {mark} className="marker" id='cud' style={{width:'27px',height:'37px',position:'absolute',top:'600px',left:'390px'}}></img>
         <img  src = {mark} className="marker" id='jarmnine' style={{width:'27px',height:'37px',position:'absolute',top:'700px',left:'280px'}}></img>
-        <img  src = {mark} className="commart" id='6' style={{width:'27px',height:'37px',position:'absolute',top:'680px',left:'420px'}}></img>
+        <img  src = {mark} className="commart" id='6' style={{width:'27px',height:'37px',position:'absolute',top:'680px',left:'420px'}} onClick = { ()=> handleclick({'status':true,'val_id':5})}></img>
         <img  src = {mark} className="marker" id='dent' style={{width:'27px',height:'37px',position:'absolute',top:'170px',left:'730px'}}></img>
         <img  src = {mark} className="marker" id='pesad' style={{width:'27px',height:'37px',position:'absolute',top:'200px',left:'580px'}}></img>
         <img  src = {mark} className="marker" id='arch' style={{width:'27px',height:'37px',position:'absolute',top:'400px',left:'565px'}}></img>
