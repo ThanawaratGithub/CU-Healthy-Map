@@ -1,5 +1,6 @@
 import canteen from './canteenmap.jpg'
 import mark from './ggmark.jpg'
+import star from './star_icon.jpg'
 import './App.css';
 import * as React from 'react';
 import Box from '@mui/material/Box';
@@ -23,8 +24,7 @@ function App() {
       let compo = database[event['val_id']];
       setModaname(compo['canteen_name'])
       for(let i = 0; i<compo['menu'].length ;i++){
-          let menu_name = compo['menu'][i]['menu_name']
-          listofrec.push(<RecipeReviewCard key = {i} props = {{name:menu_name}}/>)
+          listofrec.push(<RecipeReviewCard key = {i} props = {compo['menu'][i]}/>)
       }
   
 
@@ -53,10 +53,19 @@ function App() {
       >
         <>
 
-        <div className = 'card_container'>
-          <div>{modalname}</div>
-        {showlist}
+        <div className = 'card_container' style={{borderRadius:'8px',paddingBottom:'10px'}}> 
+          <div style={{padding:'10px'}}>
+          <div style={{display:'flex'}}>
+          <div ><img src = {star} ></img></div>
+          <div  ><p>เมนูอาหารสุขภาพ</p></div>
 
+          </div>
+          ณ {modalname}
+          <div style={{margin:'auto',width: '95%', height: '100%', border: '1px #CBD5E1 solid'}}></div>
+          </div>
+          <div>{showlist}</div>
+          
+        
 
       </div>
 

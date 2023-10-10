@@ -1,0 +1,45 @@
+
+ิbody{
+    font-family:'Noto Sans Thai', sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&family=Noto+Sans+Thai:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
+.box_container{
+    display: flex;
+    border-radius: 12px;
+    border: 2px solid var(--base-border-light, #E2E8F0);
+    box-shadow: 0px 1px 2px 0px rgba(30, 41, 59, 0.05);
+    /*background-color: red;*/
+    height: auto;
+}
+.img_container{
+    /*background-color: yellow;*/
+    display: flex;
+    align-items: center;
+    margin:5px
+}
+.res_detail{
+    width: 100%;
+}
+.detail_head{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    
+    width: 100%;
+    flex-wrap: wrap;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: var(--base-text-high, #0F172A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Head/H5/Bold */
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+

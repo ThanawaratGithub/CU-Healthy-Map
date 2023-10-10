@@ -3,17 +3,16 @@
   width: 100%;
 }
 .card_container{
-    background-color: red;  
+    background-color: white;  
     position:absolute;
-    left:20%;
-    top:30%;
-    width: 60%;
-    max-height: 50%;
+    left:10%;
+    top:15%;
+    width: 80%;
+    max-height: 70%;
     overflow: auto;
 }
 
 .container {
-  background-color: red;
   overflow: auto; /* Enable scrolling for overflowing content */
   width: 100vw;
   height: 100vh;
@@ -34,7 +33,6 @@
 
 @media (min-width: 900px) {
   .container {
-    background-color: blue;
     overflow: auto; /* Enable scrolling for overflowing content */
     width: 100vw;
     height: 100vh;
@@ -42,3 +40,4 @@
     justify-content: center;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap');
