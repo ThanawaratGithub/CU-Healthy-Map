@@ -118,8 +118,8 @@ function App() {
             className="sasin"
             id = "10"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "250px",
               left: "300px",
@@ -132,10 +132,10 @@ function App() {
             className="student_dorm"
             id="11"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
-              top: "370px",
+              top: "380px",
               left: "400px",
             }}
             onClick={() => handleclick({ val_id: "11" })}
@@ -145,11 +145,11 @@ function App() {
             className="office_of_university"
             id="12"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "450px",
-              left: "420px",
+              left: "410px",
               
             }}
             onClick={() => handleclick({ val_id: "12" })}
@@ -159,11 +159,11 @@ function App() {
             className="edu"
             id="3"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
-              top: "600px",
-              left: "390px",
+              top: "585px",
+              left: "385px",
             }}
             onClick={() => handleclick({ val_id: "3" })}
           ></img>
@@ -172,11 +172,11 @@ function App() {
             className="chamchuri9"
             id="13"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
-              top: "700px",
-              left: "280px",
+              top: "690px",
+              left: "270px",
             }}
             onClick={() => handleclick({ val_id: "13" })}
           ></img>
@@ -185,8 +185,8 @@ function App() {
             className="commart"
             id="6"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "680px",
               left: "435px",
@@ -198,11 +198,11 @@ function App() {
             className="dent"
             id="15"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
-              top: "170px",
-              left: "730px",
+              top: "160px",
+              left: "710px",
             }}
             onClick={() => handleclick({ val_id: "15" })}
           ></img>
@@ -211,8 +211,8 @@ function App() {
             className="Rx"
             id="14"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "200px",
               left: "580px",
@@ -224,8 +224,8 @@ function App() {
             className="arch"
             id="7"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "400px",
               left: "565px",
@@ -238,8 +238,8 @@ function App() {
             className="art"
             id="1"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "420px",
               left: "810px",
@@ -251,10 +251,10 @@ function App() {
             className="engineer"
             id="9"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
-              top: "555px",
+              top: "542px",
               left: "800px",
             }}
             onClick={() => handleclick({ val_id: "9" })}
@@ -264,11 +264,11 @@ function App() {
             className="science"
             id="16"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "640px",
-              left: "600px",
+              left: "585px",
             }}
             onClick={() => handleclick({ val_id: "16" })}
     
@@ -278,8 +278,8 @@ function App() {
             className="polscience"
             id="2"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "735px",
               left: "795px",
@@ -291,8 +291,8 @@ function App() {
             className="econ"
             id="4"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "780px",
               left: "680px",
@@ -304,11 +304,11 @@ function App() {
             className="charm_square"
             id="8"
             style={{
-              width: "27px",
-              height: "37px",
+              width: "45px",
+              height: "45px",
               position: "absolute",
               top: "830px",
-              left: "605px",
+              left: "600px",
             }}
             onClick={() => handleclick({ val_id: "8" })}
           ></img>
