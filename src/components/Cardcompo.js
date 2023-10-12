@@ -28,6 +28,7 @@ const ExpandMore = styled((props) => {
 
 export default function RecipeReviewCard(props) {
   let db = props.props;
+  console.log(db.image_path)
   const [expanded, setExpanded] = React.useState(false);
 
   const handleExpandClick = () => {
@@ -47,11 +48,15 @@ export default function RecipeReviewCard(props) {
         }}
       >
         <div className="content_container" onClick={handleExpandClick}>  
-          <div className="img_container">    
-            <img
-              src="https://shorturl.at/dkuKU"
-              style={{ width: "74px", height: "66px", borderRadius: "4px" }}
-            ></img>
+          <div className="img_container" style={{
+            backgroundColor:'red',
+            width:'74px',
+            height:'66px',
+            borderRadius:'4px',
+            backgroundSize:'120% 120%',
+            background: 'url'+'('+ process.env.PUBLIC_URL + '/food_image/'+ db.image_path +'.jpg'+")"+ 'lightgray 50% / cover no-repeat'
+          }}>    
+
           </div>
           <div className="res_detail">
             <div className="detail_head">

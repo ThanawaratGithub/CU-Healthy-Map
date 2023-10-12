@@ -1,4 +1,4 @@
-export let database = [
+[
     {
         "id" : 1,
         "canteen_name": "โรงอาหารคณะอักษร",
