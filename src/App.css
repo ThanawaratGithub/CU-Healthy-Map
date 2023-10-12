@@ -5,11 +5,13 @@
 .card_container{
     background-color: white;  
     position:absolute;
-    left:10%;
+    left:7%;
     top:15%;
     width: 80%;
     height: 70%;
     overflow: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
 
 .container {
@@ -29,7 +31,14 @@
   height: 900px;
 
 }
-
+.canteen_loc{
+  color: var(--base-text-high, #0F172A);
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 200% */
+}
 
 @media (min-width: 900px) {
   .container {
@@ -39,4 +48,21 @@
     display: flex;
     justify-content: center;
   }
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&family=Noto+Sans+Thai:wght@500;600&display=swap');
+ิbody{
+    font-family: 'Noto Sans Thai', sans-serif;
+
+}
+p{
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: var(--base-text-high, #0F172A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Head/H5/Bold */
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
 }
