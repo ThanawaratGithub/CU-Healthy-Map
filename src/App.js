@@ -1,30 +1,21 @@
-import canteen from "./image 4_auto_x2.jpg";
-import mark from "./canteenmap.jpg";
-import star from "./star_icon.jpg";
-import logo from "./cu_healthymap_logo.png"
+import canteen from "./asset/map/canteenmap_ai.jpg";
+import star from "./asset/icons/star_icon.jpg";
+import logo from "./asset/icons/cu_healthymap_logo.png"
 import "./App.css";
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import RecipeReviewCard from "./components/Cardcompo";
-import { List, Paper } from "@mui/material";
-import database from './data_as_of_1210.json'
+import database from './database/data_as_of_1210.json'
 import ClearIcon from '@mui/icons-material/Clear';
-import { red } from "@mui/material/colors";
-import nomenu from "./nomenu_logo.png"
-import distress from "./distress.png"
+import nomenu from "./asset/icons/nomenu_logo.png"
+import distress from "./asset/icons/distress.png"
 function App() {
   const [open, setOpen] = React.useState(false);
   const [showlist, setShow] = React.useState([0]);
   const [modalname, setModaname] = React.useState("");
   const [haverec,Sethaverec] = React.useState(false)
-  const no_menupage = (<>
-    <div  >
-    <img src = {nomenu} style={{backgroundColor:'red',width:'130px','height':'130px'}}></img>
-    </div>
-  </>)
+
+
   const handleClose = () => setOpen(false);
   const test_valid = (val_id)=>{
     for(let i = 0;i<database.length;i++){
