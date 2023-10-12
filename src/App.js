@@ -14,6 +14,7 @@ import database from './data_as_of_1210.json'
 import ClearIcon from '@mui/icons-material/Clear';
 import { red } from "@mui/material/colors";
 import nomenu from "./nomenu_logo.png"
+import distress from "./distress.png"
 function App() {
   const [open, setOpen] = React.useState(false);
   const [showlist, setShow] = React.useState([0]);
@@ -113,7 +114,7 @@ function App() {
         <div className="map-container">
           <img src={canteen} className="map" alt="Map" />
           <img
-            src={mark}
+            src={distress}
             className="sasin"
             id = "10"
             style={{
@@ -122,11 +123,12 @@ function App() {
               position: "absolute",
               top: "250px",
               left: "300px",
+          
             }}
             onClick={() => handleclick({ val_id: "10" })}
             ></img>
           <img
-            src={mark}
+            src={distress}
             className="student_dorm"
             id="11"
             style={{
@@ -139,7 +141,7 @@ function App() {
             onClick={() => handleclick({ val_id: "11" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="office_of_university"
             id="12"
             style={{
@@ -153,7 +155,7 @@ function App() {
             onClick={() => handleclick({ val_id: "12" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="edu"
             id="3"
             style={{
@@ -166,7 +168,7 @@ function App() {
             onClick={() => handleclick({ val_id: "3" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="chamchuri9"
             id="13"
             style={{
@@ -179,7 +181,7 @@ function App() {
             onClick={() => handleclick({ val_id: "13" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="commart"
             id="6"
             style={{
@@ -192,7 +194,7 @@ function App() {
             onClick={() => handleclick({val_id: "6" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="dent"
             id="15"
             style={{
@@ -205,7 +207,7 @@ function App() {
             onClick={() => handleclick({ val_id: "15" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="Rx"
             id="14"
             style={{
@@ -218,7 +220,7 @@ function App() {
             onClick={() => handleclick({ val_id: "14" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="arch"
             id="7"
             style={{
@@ -232,7 +234,7 @@ function App() {
 
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="art"
             id="1"
             style={{
@@ -245,7 +247,7 @@ function App() {
             onClick={() => handleclick({ val_id: "1" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="engineer"
             id="9"
             style={{
@@ -258,7 +260,7 @@ function App() {
             onClick={() => handleclick({ val_id: "9" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="science"
             id="16"
             style={{
@@ -272,7 +274,7 @@ function App() {
     
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="polscience"
             id="2"
             style={{
@@ -285,7 +287,7 @@ function App() {
             onClick={() => handleclick({ val_id: "2" })}
           ></img>
           <img
-            src={mark}
+            src={distress}
             className="econ"
             id="4"
             style={{
@@ -298,7 +300,7 @@ function App() {
             onClick={() => handleclick({ val_id: "4" })}
           ></img>
                     <img
-            src={mark}
+            src={distress}
             className="charm_square"
             id="8"
             style={{
