@@ -92,7 +92,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 160% */
+line-height: 17px; /* 160% */
 
 }
 .cus_review{
@@ -109,7 +109,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 16px; /* 160% */
+line-height: 17px; /* 160% */
 }
 @media (min-width: 800px) {
     .res_name{
