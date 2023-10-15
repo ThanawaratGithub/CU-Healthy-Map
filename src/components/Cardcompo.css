@@ -111,23 +111,3 @@ font-style: normal;
 font-weight: 400;
 line-height: 17px; /* 160% */
 }
-@media (min-width: 800px) {
-    .res_name{
-        width: 30%;
-        max-width: 30%;
-        color: #7FCB9B;
-    font-feature-settings: 'clig' off, 'liga' off;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px; /* 166.667% */
-    }
-    .detail_head{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction:row;
-        margin-top: 8px;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-  }

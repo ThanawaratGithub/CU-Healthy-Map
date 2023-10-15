@@ -1,42 +1,43 @@
 import canteen from "./asset/map/canteenmap_ai.jpg";
 import star from "./asset/icons/star_icon.jpg";
-import logo from "./asset/icons/cu_healthymap_logo.png"
+import logo from "./asset/icons/cu_healthymap_logo.png";
 import "./App.css";
 import * as React from "react";
 import Modal from "@mui/material/Modal";
 import RecipeReviewCard from "./components/Cardcompo";
-import database from './database/data_as_of_1210.json'
-import ClearIcon from '@mui/icons-material/Clear';
-import nomenu from "./asset/icons/nomenu_logo.png"
-import distress from "./asset/icons/distress.png"
+import database from "./database/data_as_of_1210.json";
+import ClearIcon from "@mui/icons-material/Clear";
+import nomenu from "./asset/icons/nomenu_logo.png";
+import distress from "./asset/icons/distress.png";
 function App() {
   const [open, setOpen] = React.useState(false);
   const [showlist, setShow] = React.useState([0]);
   const [modalname, setModaname] = React.useState("");
-  const [haverec,Sethaverec] = React.useState(false)
-
+  const [haverec, Sethaverec] = React.useState(false);
 
   const handleClose = () => setOpen(false);
-  const test_valid = (val_id)=>{
-    for(let i = 0;i<database.length;i++){
-      if( val_id == database[i]['id']){
-        return [i,true]
+  const test_valid = (val_id) => {
+    for (let i = 0; i < database.length; i++) {
+      if (val_id == database[i]["id"]) {
+        if (database[i]["menu"].length == 0) {
+          setModaname(database[i]["canteen_name"]);
+          return [ -1 , false];
+        } else {
+          return [i, true];
+        }
       }
     }
-    return [-1,false]
-
-  }
+    setModaname("no_data")
+    return [-1, false];
+  };
   const handleclick = (event) => {
-
-    
     let listofrec = [];
-    let result = test_valid(event['val_id'])
-    let status = result[1]
-    let ind = result[0]
+    let result = test_valid(event["val_id"]);
+    let status = result[1];
+    let ind = result[0];
 
-    
     if (status) {
-      Sethaverec(status)
+      Sethaverec(status);
 
       let compo = database[ind];
       setModaname(compo["canteen_name"]);
@@ -47,10 +48,9 @@ function App() {
       setShow(listofrec);
       setOpen(true);
     } else {
-      setModaname(" ");
-      setShow([])
-      setShow(listofrec)
-      Sethaverec(status)
+      setShow([]);
+      setShow(listofrec);
+      Sethaverec(status);
       setOpen(true);
     }
   };
@@ -63,10 +63,15 @@ function App() {
           onClose={handleClose}
           aria-labelledby="mptjomg"
           aria-describedby="modal-modal-description"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
           <>
             <div className="card_container" style={{ padding: "12px" }}>
-              <div >
+              <div>
                 <div style={{ display: "flex", gap: "4px" }}>
                   <div>
                     <img src={star}></img>
@@ -74,8 +79,11 @@ function App() {
                   <div>
                     <p>เมนูอาหารสุขภาพแนะนำ</p>
                   </div>
-                  <ClearIcon sx = {{marginLeft:'auto'}} onClick ={handleClose}/>
-                </div> 
+                  <ClearIcon
+                    sx={{ marginLeft: "auto" }}
+                    onClick={handleClose}
+                  />
+                </div>
                 <p className="canteen_loc"> ณ {modalname} </p>
 
                 <div
@@ -87,19 +95,33 @@ function App() {
                   }}
                 ></div>
               </div>
-              {haverec? <div >{showlist}</div>
-                :<>
-                <div style={{display:'flex',width:'100%',height:'80%',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                  <img src ={nomenu} style={{width:'130px',height:'130px'}}></img>
-                  <p style={{color: '#94A3B8'}}>ยังไม่มีเมนูแนะนำในโรงอาหารนี้</p>
-
-                </div>
-                
-                </>}
+              {haverec ? (
+                <div>{showlist}</div>
+              ) : (
+                <>
+                  <div
+                    style={{
+                      display: "flex",
+                      width: "100%",
+                      height: "80%",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <img
+                      src={nomenu}
+                      style={{ width: "130px", height: "130px" }}
+                    ></img>
+                    <p style={{ color: "#94A3B8" }}>
+                      ยังไม่มีเมนูแนะนำในโรงอาหารนี้
+                    </p>
+                  </div>
+                </>
+              )}
             </div>
           </>
         </Modal>
-        
       </>
       <div className="container">
         <div className="map-container">
@@ -107,17 +129,16 @@ function App() {
           <img
             src={distress}
             className="sasin"
-            id = "10"
+            id="10"
             style={{
               width: "45px",
               height: "45px",
               position: "absolute",
               top: "250px",
               left: "300px",
-          
             }}
             onClick={() => handleclick({ val_id: "10" })}
-            ></img>
+          ></img>
           <img
             src={distress}
             className="student_dorm"
@@ -141,7 +162,6 @@ function App() {
               position: "absolute",
               top: "450px",
               left: "410px",
-              
             }}
             onClick={() => handleclick({ val_id: "12" })}
           ></img>
@@ -182,7 +202,7 @@ function App() {
               top: "680px",
               left: "435px",
             }}
-            onClick={() => handleclick({val_id: "6" })}
+            onClick={() => handleclick({ val_id: "6" })}
           ></img>
           <img
             src={distress}
@@ -222,7 +242,6 @@ function App() {
               left: "565px",
             }}
             onClick={() => handleclick({ val_id: "7" })}
-
           ></img>
           <img
             src={distress}
@@ -262,7 +281,6 @@ function App() {
               left: "585px",
             }}
             onClick={() => handleclick({ val_id: "16" })}
-    
           ></img>
           <img
             src={distress}
@@ -290,7 +308,7 @@ function App() {
             }}
             onClick={() => handleclick({ val_id: "4" })}
           ></img>
-                    <img
+          <img
             src={distress}
             className="charm_square"
             id="8"
@@ -303,23 +321,22 @@ function App() {
             }}
             onClick={() => handleclick({ val_id: "8" })}
           ></img>
-   
         </div>
         <img
-            src={logo}
-            className="logo"
-            style={{ 
-              width: '130px',
-              height: '43px',
-              position: 'absolute',
-              top: '2px',
-              left: '5%',
-              backgroundColor: 'white',
-              padding: '12px',
-              borderRadius: '4px',
-              boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
-            }}
-          ></img>
+          src={logo}
+          className="logo"
+          style={{
+            width: "130px",
+            height: "43px",
+            position: "absolute",
+            top: "2px",
+            left: "5%",
+            backgroundColor: "white",
+            padding: "12px",
+            borderRadius: "4px",
+            boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+          }}
+        ></img>
       </div>
     </>
   );
