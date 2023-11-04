@@ -1,4 +1,4 @@
-import canteen from "./asset/map/canteenmap_ai.jpg";
+import canteen from "./asset/map/new_image.jpg";
 import star from "./asset/icons/star_icon.jpg";
 import logo from "./asset/icons/cu_healthymap_logo.png";
 import "./App.css";
@@ -126,19 +126,7 @@ function App() {
       <div className="container">
         <div className="map-container">
           <img src={canteen} className="map" alt="Map" />
-          <img
-            src={distress}
-            className="sasin"
-            id="10"
-            style={{
-              width: "45px",
-              height: "45px",
-              position: "absolute",
-              top: "250px",
-              left: "300px",
-            }}
-            onClick={() => handleclick({ val_id: "10" })}
-          ></img>
+
           <img
             src={distress}
             className="student_dorm"
@@ -178,19 +166,7 @@ function App() {
             }}
             onClick={() => handleclick({ val_id: "3" })}
           ></img>
-          <img
-            src={distress}
-            className="chamchuri9"
-            id="13"
-            style={{
-              width: "45px",
-              height: "45px",
-              position: "absolute",
-              top: "690px",
-              left: "270px",
-            }}
-            onClick={() => handleclick({ val_id: "13" })}
-          ></img>
+
           <img
             src={distress}
             className="commart"
