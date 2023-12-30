@@ -1,4 +1,4 @@
-Chula Healthy Map
+#Chula Healthy Map
 Overview
 Chula Healthy Map is an interactive web application designed to showcase the healthy food options available at canteens in Chulalongkorn University. This map-based website is developed to help students and staff easily locate and explore different healthy eating choices on campus.
 
@@ -9,4 +9,3 @@ Detailed Information: View detailed information about each canteen, including me
 Customer Reviews: Read reviews from other users to help you choose the best dining options.
 Deployment
 The website is successfully deployed on Netlify and can be accessed at cuhealthymap.
-
