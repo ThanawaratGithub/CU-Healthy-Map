@@ -10,5 +10,5 @@
 - **Customer Reviews**: Read reviews from other users to help you choose the best dining options.
 
 ## Deployment
-The website is successfully deployed on Netlify and can be accessed at [cuhealthymap](<cuh>).
+The website is successfully deployed on Netlify and can be accessed at [cuhealthymap](<cuhealthymap.netlify.app>).
 
